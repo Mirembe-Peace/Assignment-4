@@ -1,0 +1,264 @@
+{
+  "best_model": "LightGBM",
+  "best_params": {
+    "learning_rate": 0.0201,
+    "max_depth": 5,
+    "min_child_samples": 56,
+    "n_estimators": 150,
+    "num_leaves": 58
+  },
+  "sklearn_version": "1.8.0",
+  "zscore": {
+    "mean": 32.652291751335554,
+    "std": 29.063579064727637
+  },
+  "test_metrics_holdout": {
+    "RMSE (z)": 0.874,
+    "MAE (z)": 0.598,
+    "R2": 0.11,
+    "RMSE (\u00b5g/m\u00b3)": 26.01,
+    "MAE (\u00b5g/m\u00b3)": 17.399,
+    "Bias (\u00b5g/m\u00b3)": 3.696,
+    "AQI category accuracy": 0.577,
+    "CV RMSE (z)": 0.942,
+    "fit time (s)": 180.0
+  },
+  "all_models": [
+    {
+      "model": "LightGBM",
+      "RMSE (z)": 0.874,
+      "MAE (z)": 0.598,
+      "R2": 0.11,
+      "RMSE (\u00b5g/m\u00b3)": 26.01,
+      "MAE (\u00b5g/m\u00b3)": 17.399,
+      "Bias (\u00b5g/m\u00b3)": 3.696,
+      "AQI category accuracy": 0.577,
+      "CV RMSE (z)": 0.942,
+      "fit time (s)": 180.0
+    },
+    {
+      "model": "SVR",
+      "RMSE (z)": 0.877,
+      "MAE (z)": 0.604,
+      "R2": 0.104,
+      "RMSE (\u00b5g/m\u00b3)": 26.104,
+      "MAE (\u00b5g/m\u00b3)": 17.581,
+      "Bias (\u00b5g/m\u00b3)": 3.863,
+      "AQI category accuracy": 0.584,
+      "CV RMSE (z)": 0.939,
+      "fit time (s)": 55.8
+    },
+    {
+      "model": "Ridge",
+      "RMSE (z)": 0.877,
+      "MAE (z)": 0.621,
+      "R2": 0.103,
+      "RMSE (\u00b5g/m\u00b3)": 26.111,
+      "MAE (\u00b5g/m\u00b3)": 18.066,
+      "Bias (\u00b5g/m\u00b3)": 3.939,
+      "AQI category accuracy": 0.514,
+      "CV RMSE (z)": 0.988,
+      "fit time (s)": 11.8
+    },
+    {
+      "model": "RandomForest",
+      "RMSE (z)": 0.878,
+      "MAE (z)": 0.596,
+      "R2": 0.102,
+      "RMSE (\u00b5g/m\u00b3)": 26.113,
+      "MAE (\u00b5g/m\u00b3)": 17.357,
+      "Bias (\u00b5g/m\u00b3)": 3.522,
+      "AQI category accuracy": 0.557,
+      "CV RMSE (z)": 0.932,
+      "fit time (s)": 98.2
+    },
+    {
+      "model": "HistGradientBoosting",
+      "RMSE (z)": 0.884,
+      "MAE (z)": 0.601,
+      "R2": 0.089,
+      "RMSE (\u00b5g/m\u00b3)": 26.305,
+      "MAE (\u00b5g/m\u00b3)": 17.499,
+      "Bias (\u00b5g/m\u00b3)": 3.887,
+      "AQI category accuracy": 0.58,
+      "CV RMSE (z)": 0.935,
+      "fit time (s)": 80.4
+    },
+    {
+      "model": "DecisionTree",
+      "RMSE (z)": 0.894,
+      "MAE (z)": 0.607,
+      "R2": 0.069,
+      "RMSE (\u00b5g/m\u00b3)": 26.558,
+      "MAE (\u00b5g/m\u00b3)": 17.667,
+      "Bias (\u00b5g/m\u00b3)": 3.587,
+      "AQI category accuracy": 0.547,
+      "CV RMSE (z)": 0.957,
+      "fit time (s)": 1.8
+    },
+    {
+      "model": "KNN",
+      "RMSE (z)": 0.914,
+      "MAE (z)": 0.623,
+      "R2": 0.026,
+      "RMSE (\u00b5g/m\u00b3)": 27.171,
+      "MAE (\u00b5g/m\u00b3)": 18.123,
+      "Bias (\u00b5g/m\u00b3)": 4.53,
+      "AQI category accuracy": 0.546,
+      "CV RMSE (z)": 0.96,
+      "fit time (s)": 2.2
+    },
+    {
+      "model": "Stacking",
+      "RMSE (z)": 0.921,
+      "MAE (z)": 0.645,
+      "R2": 0.011,
+      "RMSE (\u00b5g/m\u00b3)": 27.353,
+      "MAE (\u00b5g/m\u00b3)": 18.783,
+      "Bias (\u00b5g/m\u00b3)": 6.753,
+      "AQI category accuracy": 0.542,
+      "CV RMSE (z)": 0.925,
+      "fit time (s)": 27.4
+    },
+    {
+      "model": "Baseline (predict mean)",
+      "RMSE (z)": 0.928,
+      "MAE (z)": 0.701,
+      "R2": -0.003,
+      "RMSE (\u00b5g/m\u00b3)": 27.545,
+      "MAE (\u00b5g/m\u00b3)": 20.403,
+      "Bias (\u00b5g/m\u00b3)": 1.485,
+      "AQI category accuracy": 0.613,
+      "CV RMSE (z)": null,
+      "fit time (s)": 0.0
+    }
+  ],
+  "stage_times_s": {
+    "cleaning": 0.4,
+    "resampling": 4.1,
+    "features": 24.8,
+    "modelling": 483.0,
+    "save_model": 508.1,
+    "forecast": 523.7,
+    "monitoring": 540.0
+  },
+  "total_runtime_s": 540.1,
+  "host": "Peace",
+  "python": "3.13.5",
+  "cpu_count": 8,
+  "drift": {
+    "drifted_columns": {
+      "count": 5.0,
+      "share": 0.8333333333333334
+    },
+    "seasonal_drifted_columns": {
+      "count": 3.0,
+      "share": 0.6
+    },
+    "seasonal_drift": [
+      {
+        "column": "temp",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.3673,
+        "threshold": 0.1,
+        "drift detected": true
+      },
+      {
+        "column": "humidity",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.5878,
+        "threshold": 0.1,
+        "drift detected": true
+      },
+      {
+        "column": "hour_sin",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.0264,
+        "threshold": 0.1,
+        "drift detected": false
+      },
+      {
+        "column": "hour_cos",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.0182,
+        "threshold": 0.1,
+        "drift detected": false
+      },
+      {
+        "column": "pm25_z",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.7898,
+        "threshold": 0.1,
+        "drift detected": true
+      }
+    ],
+    "model_drift": {
+      "reference (train, out-of-fold)": {
+        "RMSE": 0.944,
+        "MAE": 0.589,
+        "MeanError": -0.098,
+        "R2Score": 0.249,
+        "AbsMaxError": 20.533
+      },
+      "current (hold-out)": {
+        "RMSE": 0.874,
+        "MAE": 0.598,
+        "MeanError": 0.128,
+        "R2Score": 0.11,
+        "AbsMaxError": 19.326
+      },
+      "change": {
+        "RMSE": -0.07,
+        "MAE": 0.009,
+        "MeanError": 0.226,
+        "R2Score": -0.139,
+        "AbsMaxError": -1.207
+      }
+    },
+    "feature_drift": [
+      {
+        "column": "temp",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.1602,
+        "threshold": 0.1,
+        "drift detected": true
+      },
+      {
+        "column": "humidity",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.2614,
+        "threshold": 0.1,
+        "drift detected": true
+      },
+      {
+        "column": "hour_sin",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.1789,
+        "threshold": 0.1,
+        "drift detected": true
+      },
+      {
+        "column": "hour_cos",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.3398,
+        "threshold": 0.1,
+        "drift detected": true
+      },
+      {
+        "column": "pm25_z",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.0831,
+        "threshold": 0.1,
+        "drift detected": false
+      },
+      {
+        "column": "prediction",
+        "test": "Wasserstein distance (normed)",
+        "value": 0.3545,
+        "threshold": 0.1,
+        "drift detected": true
+      }
+    ]
+  },
+  "gpu": "torch not installed / none"
+}

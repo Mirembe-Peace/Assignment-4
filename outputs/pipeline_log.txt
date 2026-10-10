@@ -1,0 +1,23 @@
+2026-10-11 00:04:59,815 | INFO | Raw shape: (14600, 9)
+2026-10-11 00:04:59,968 | INFO | Python 3.13.5 | pandas 3.0.0 | sklearn 1.8.0 | host Peace
+2026-10-11 00:05:00,083 | INFO | Duplicates removed: 0
+2026-10-11 00:05:00,369 | INFO | Clean observed rows: 14600 | PM2.5 non-null: 14275
+2026-10-11 00:05:00,370 | INFO | STAGE DONE: cleaning  (t = 0.4 s)
+2026-10-11 00:05:04,055 | INFO | STAGE DONE: resampling  (t = 4.1 s)
+2026-10-11 00:05:24,757 | INFO | STAGE DONE: features  (t = 24.8 s)
+2026-10-11 00:05:36,649 | INFO | Ridge                  CV RMSE(z)=0.988 | test RMSE(z)=0.877 | best={'alpha': 659.8711} | 11.8s
+2026-10-11 00:05:38,836 | INFO | KNN                    CV RMSE(z)=0.960 | test RMSE(z)=0.914 | best={'n_neighbors': 32, 'p': 2, 'weights': 'distance'} | 2.2s
+2026-10-11 00:06:34,700 | INFO | SVR                    CV RMSE(z)=0.939 | test RMSE(z)=0.877 | best={'C': 1.3293, 'epsilon': 0.4854, 'gamma': 0.157} | 55.9s
+2026-10-11 00:06:36,551 | INFO | DecisionTree           CV RMSE(z)=0.957 | test RMSE(z)=0.894 | best={'max_depth': 10, 'max_features': None, 'min_samples_leaf': 44, 'min_samples_split': 9} | 1.8s
+2026-10-11 00:08:14,801 | INFO | RandomForest           CV RMSE(z)=0.932 | test RMSE(z)=0.878 | best={'max_depth': 12, 'max_features': 0.5, 'min_samples_leaf': 11, 'n_estimators': 187} | 98.2s
+2026-10-11 00:11:14,879 | INFO | LightGBM               CV RMSE(z)=0.942 | test RMSE(z)=0.874 | best={'learning_rate': 0.0201, 'max_depth': 5, 'min_child_samples': 56, 'n_estimators': 150, 'num_leaves': 58} | 180.1s
+2026-10-11 00:12:35,362 | INFO | HistGradientBoosting   CV RMSE(z)=0.935 | test RMSE(z)=0.884 | best={'l2_regularization': 0.8111, 'learning_rate': 0.0304, 'max_depth': 3, 'max_iter': 314, 'max_leaf_nodes': 47, 'min_samples_leaf': 62} | 80.5s
+2026-10-11 00:13:02,849 | INFO | Stacking               CV RMSE(z)=0.925 | test RMSE(z)=0.921 | alpha=100
+2026-10-11 00:13:02,959 | INFO | STAGE DONE: modelling  (t = 483.0 s)
+2026-10-11 00:13:15,302 | INFO | BEST MODEL: LightGBM
+2026-10-11 00:13:27,933 | INFO | Saved model bundle → outputs\best_pm25_model.joblib (0.13 MB)
+2026-10-11 00:13:28,070 | INFO | STAGE DONE: save_model  (t = 508.1 s)
+2026-10-11 00:13:43,645 | INFO | STAGE DONE: forecast  (t = 523.7 s)
+2026-10-11 00:13:59,975 | INFO | Evidently reports saved (evidently_data_drift.html, evidently_model_quality.html)
+2026-10-11 00:13:59,977 | INFO | STAGE DONE: monitoring  (t = 540.0 s)
+2026-10-11 00:14:00,042 | INFO | PIPELINE COMPLETE in 540.1 s — outputs in C:\Users\Lenovo pro\Desktop\WORK 2026\THIRD YEAR\FIRST SEM\AI DEPLOYMENT\AI_4_1\Assignment 4\outputs
